@@ -25,7 +25,7 @@ float calcularFrequencia(int faltas) {
 
 
 int ProvaFinal(struct Aluno alunos[], int n) {							  
-    printf("\n---         Alunos que v„o para Prova Final   	      ---\n\n");
+    printf("\n---         Alunos que v√£o para Prova Final   	      ---\n\n");
     int i;
     for (i = 0; i < n; i++) {
         if (alunos[i].media < 5.0 && alunos[i].frequencia >= 65.0) {
@@ -48,10 +48,10 @@ int MediaOrdemDecrescente(struct Aluno alunos[], int n) {
         }
     }
 
-    printf("\n---         MÈdias Finais dos Alunos                  ---\n\n");
+    printf("\n---         M√©dias Finais dos Alunos                  ---\n\n");
     for (i = 0; i < n; i++) {
     	printf("\n");
-        printf(" %s | RA: %s | MÈdia: %.2f | %s\n", alunos[i].nome, alunos[i].ra, alunos[i].media, alunos[i].situacao);
+        printf(" %s | RA: %s | M√©dia: %.2f | %s\n", alunos[i].nome, alunos[i].ra, alunos[i].media, alunos[i].situacao);
     }
 
     return 0;
@@ -68,7 +68,7 @@ int MediaProva(struct Aluno alunos[], int n) {
         }
     }
 
-    printf("\n---          MÈdia da Turma por Prova                 ---\n\n");
+    printf("\n---          M√©dia da Turma por Prova                 ---\n\n");
     for (i = 0; i < 3; i++) {
         printf(" Prova %d: %.2f\n", i + 1, somaProvas[i] / n);
     }
